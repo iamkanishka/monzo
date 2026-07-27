@@ -8,7 +8,7 @@ defmodule Monzo.MixProject do
     [
       app: :monzo,
       version: @version,
-      elixir: "~> 1.14",
+      elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
       deps: deps(),
@@ -71,7 +71,7 @@ defmodule Monzo.MixProject do
   defp docs do
     [
       main: "readme",
-      extras: ["README.md", "CHANGELOG.md"],
+      extras: ["README.md", "CHANGELOG.md", "LICENSE"],
       source_ref: "v#{@version}",
       source_url: @source_url,
       groups_for_modules: [

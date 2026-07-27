@@ -1,9 +1,9 @@
 defmodule Monzo.HTTP.HttpcAdapter do
   @moduledoc """
-  Default `Monzo.HTTP.Adapter` implementation, built on Erlang's `:httpc`.
+  Default Monzo.HTTP.Adapter implementation, built on Erlang's `:httpc`.
 
   Requires the `:inets` and `:ssl` applications (both part of a standard
-  Erlang/OTP install) to be started, which `Monzo.Application` ensures.
+  Erlang/OTP install) to be started, which Monzo.Application ensures.
   """
 
   @behaviour Monzo.HTTP.Adapter
