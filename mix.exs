@@ -6,7 +6,7 @@ defmodule Monzo.MixProject do
 
   def project do
     [
-      app: :monzo,
+      app: :monzo_client,
       version: @version,
       elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
@@ -14,7 +14,7 @@ defmodule Monzo.MixProject do
       deps: deps(),
       description: description(),
       package: package(),
-      name: "Monzo",
+      name: "monzo_client",
       source_url: @source_url,
       docs: docs(),
       dialyzer: [
@@ -61,7 +61,7 @@ defmodule Monzo.MixProject do
 
   defp package do
     [
-      name: "monzo",
+      name: "monzo_client",
       licenses: ["MIT"],
       links: %{"GitHub" => @source_url},
       files: ~w(lib mix.exs README.md LICENSE CHANGELOG.md .formatter.exs)
